@@ -1,15 +1,30 @@
 body {
     background-color: #2d323b;
     color: #e7e6e6;
-    font-family: 'Poppins', sans-serif;
+    font-family: monospace;
     margin: 0;
     padding: 0;
 }
 
+
+.containerw{
+  background-color:  rgb(2, 19, 19);
+  height: 100vh;
+}
+
+
+.containerc{
+  background-color:   rgb(3, 27, 26);
+}
+
+
 .container {
     max-width: 1100px;
-    margin: 40px auto;
+    margin: 40px ;
     padding: 50px 20px;
+    font-family: monospace;
+    font-size: x-large;
+  
 }
 
 .do {
@@ -99,7 +114,7 @@ body {
 
    /* CONTACT */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family:  monospace;
   background: #2b2f34;
   color: #f1f1f1;
   margin: 0;
@@ -125,11 +140,11 @@ body {
   height: 3px;
   margin: 10px auto 0;
   background: aquamarine;
-  border-radius: 3px;
+  border-radius: 5px;
 }
-
+/* omar */
 .form-control {
-  width: 100%;
+  width: 60%;
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
@@ -191,14 +206,14 @@ body {
   body {
   background-color: #1e1e1e;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
   margin: 0;
   padding: 0;
 }
 
 .container {
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1475px;
   margin: auto;
 }
 
@@ -278,9 +293,15 @@ body {
 body {
   background-color: #1e1e1e;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
   margin: 0;
   padding: 0;
+   background-color:  rgb(2, 19, 19);
+   height: 100vh;
+}
+
+.portfolio{
+   height: 100vh;
 }
 
 
@@ -344,6 +365,7 @@ section div {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   transition: transform 0.3s, box-shadow 0.3s;
+  justify-content: center;
 }
 
 section div:hover {
@@ -377,7 +399,7 @@ section p {
 /* menna */
 
 #home_page {
-  background-image: url(back_ground2.jpg);
+  background-image: url(aquamarine.avif);
   background-size: 100% 100%;
   height: 100vh;
   display: grid;
@@ -388,26 +410,26 @@ section p {
   grid-template-rows: 1fr 4fr;
   background-color: rgb(51 51 53 / 89%);
   color: rgb(250, 235, 215);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:monospace;
   font-size: x-large;
   padding-top: 10px;
   position: relative;
   z-index: 1;
   padding-left: 30px;
+  font-family:monospace;
 }
 
-#home_page::after {
+  #home_page::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   /* هنا الغمقان */
   z-index: -1;
-}
+}  
 
 .h1-menna {
   grid-area: logo;
@@ -429,9 +451,9 @@ aside {
 }
 
 .line_d:hover {
-  border-color: rgb(81, 207, 165);
+  border-color: rgb(36, 115, 89);
   color: white;
-    background-color: rgb(81, 207, 165);
+    background-color: rgb(36, 115, 89);
 }
 
 
@@ -599,6 +621,7 @@ margin-top: -182%;
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+    height: auto;
   }
 
   .range {
@@ -699,7 +722,8 @@ margin-top: -182%;
     grid-template-columns: 140fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr;
     padding: 15px;
-    font-family: sans-serif;
+    font-family: monospace;
+     height: auto;
   }
 
   .nav-menna {
@@ -753,6 +777,7 @@ margin-top: -182%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     padding: 15px;
+     height: auto;
   }
 
   .intro {
@@ -812,6 +837,8 @@ margin-top: -182%;
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+     height: auto;
+
   }
 
   .range {
@@ -854,7 +881,7 @@ margin-top: -182%;
 /* Mobile (شاشات صغيرة أقل من 520px) */
 @media (max-width: 320px) {
     #about_page {
-      
+       /* height: auto; */
         padding: 0px;
         margin: 0px;
     .h2-menna{
@@ -922,20 +949,22 @@ margin-top: -182%;
 
 
 #about_page {
-  /* background-color: rgba(53, 52, 52, 0.893); */
-  background-color: rgba(0, 0, 0, 0.8);
-  /* background-color: rgba(red, green, blue, alpha) (32, 31, 31,0.2); */
+ 
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgb(3, 27, 26);
   margin-top: 0px;
   display: grid;
   grid-template-areas:
-    "title title title title"
+    "title title title  title"
     "intro intro intro  form "
-    "num1 num2 num3 num4 ";
+    "num1 num2 num3 num4";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   font-family: sans-serif;
   font-size: x-large;
   color: rgb(250, 235, 215);
+  font-family: monospace;
+  height: 100vh;
 }
 
 
@@ -962,6 +991,7 @@ margin-top: -182%;
   padding-left: 60px;
   /* margin-right: 35px; */
   padding-right: 60px;
+  width: 70%;
 }
 
 .main_p {
@@ -973,11 +1003,16 @@ margin-top: -182%;
 .form {
   grid-area: form;
   font-size: 18px;
-  padding-right: 60px;
+  padding-right: 43px;
+}
+
+.hrform{
+  
+    margin-left: 0%;
 }
 
 .cv {
-  border: solid 3px rgb(81, 207, 165);
+  border: solid 3px rgb(50, 140, 110);
   border-radius: 50px;
   margin: 15%;
   margin-top: 10px;
@@ -985,7 +1020,7 @@ margin-top: -182%;
   padding-left: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
-  background-color: rgb(81, 207, 165);
+  background-color: rgb(50, 140, 110);
     color: white;
     
 }
@@ -1051,6 +1086,7 @@ a {
   color: inherit;
 }
 
+/* omar */
 
 /* ========== Responsive ========== */
 
@@ -1070,6 +1106,7 @@ a {
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+    height: auto;
   }
 
   .range {
@@ -1170,7 +1207,8 @@ a {
     grid-template-columns: 140fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr;
     padding: 15px;
-    font-family: sans-serif;
+    font-family: monospace;
+        height: auto;
   }
 
   .nav-menna {
@@ -1224,6 +1262,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     padding: 15px;
+        height: auto;
   }
 
   .intro {
@@ -1283,6 +1322,7 @@ a {
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+        height: auto;
   }
 
   .range {
@@ -1325,7 +1365,7 @@ a {
 /* Mobile (شاشات صغيرة أقل من 520px) */
 @media (max-width: 320px) {
     #about_page {
-      
+      height: auto;
         padding: 0px;
         margin: 0px;
     .h2-menna{
@@ -1397,9 +1437,11 @@ html, body {
     box-sizing: border-box;
 } 
 
+
 #resume_page {
-  background-color:rgba(0, 0, 0, 0.8) ;
-    background-color: rgba(0, 0, 0, 0.8);
+  /* background-color:rgba(0, 0, 0, 0.8) ; */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+     background-color: rgb(3, 27, 26);
   margin-top: 0px;
   display: grid;
   grid-template-areas:
@@ -1410,11 +1452,17 @@ html, body {
     "link link";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  font-family:sans-serif;
+  font-family:monospace;
   font-size: large;
   color: rgb(250, 235, 215);
+  
 }
 
+
+.my_skills {
+  margin-left: 5%;
+  
+}
 .h2-menna {
   text-align: center;
   font-weight: 600;
@@ -1429,7 +1477,7 @@ html, body {
 
 .card1 {
   grid-area: card1;
-
+  margin-right: 5%;
   margin-left: 5%;
 }
 
@@ -1440,13 +1488,13 @@ html, body {
 
 .card0{
   border-radius: 10px;
-  border: 3px solid rgb(7, 0, 13);
+  border: 3px solid rgb(14 106 76);
   padding: 20px;
   margin: 20px;
   /* background-color: rgb(7, 0, 13); */
   /* background-color: rgb(3, 43, 30); */
-  background-color: rgb(14 106 76)
-/* background-color: aquamarine */
+  background-color:  rgb(20, 108, 79);
+
 }
 
 .year {
@@ -1455,13 +1503,18 @@ html, body {
   border-radius: 5px;
   padding-left: 5px;
   box-sizing: border-box;
-  width: 120px;
+  width: 140px;
   text-align: center;
 }
 
 h3 {
   padding-left: 20px;
   /* padding-right: 20px; */
+}
+
+
+.display-none {
+ visibility: hidden;
 }
 
 .color {
@@ -1474,7 +1527,8 @@ h3 {
 
 .range1 {
   grid-area: range1;
-  padding-left: 30px;
+    margin-left: 5%;
+      padding-left: 20px;
 }
 
 .range2 {
@@ -1486,8 +1540,29 @@ h3 {
   grid-area: header2;
 }
 
-.space {
+.space1 {
   padding-left: 450px;
+}
+
+
+.space2 {
+  padding-left: 470px;
+}
+
+.space3 {
+  padding-left: 462px;
+}
+
+.space4 {
+  padding-left: 460px;
+}
+
+.space5 {
+  padding-left: 540px;
+}
+
+.space6 {
+  padding-left: 505px;
 }
 
 .input-menna {
@@ -1498,6 +1573,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+
+
+
 
 /* ========== Responsive ========== */
 
@@ -1517,8 +1597,11 @@ a {
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+    height: auto;
   }
-
+.portfolio {
+      height: auto;
+    }
   .range {
     padding: 0px;
     margin-right: 0px;
@@ -1584,7 +1667,9 @@ a {
   .line_a {
     font-size: 33px;
   }
-
+.portfolio {
+      height: auto;
+    }
 }
 
 
@@ -1599,6 +1684,9 @@ a {
     margin-right: 0%;
     padding: 5%;
 }
+.portfolio {
+      height: auto;
+    }
 }
 
 
@@ -1617,9 +1705,12 @@ a {
     grid-template-columns: 140fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr;
     padding: 15px;
-    font-family: sans-serif;
+    font-family: monospace;
+        height: auto;
   }
-
+.portfolio {
+      height: auto;
+    }
   .nav-menna {
     flex-direction: column;
     font-size: 18px;
@@ -1671,6 +1762,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     padding: 15px;
+        height: auto;
   }
 
   .intro {
@@ -1730,6 +1822,7 @@ a {
     grid-template-columns: 1fr;
     margin: 0;
     padding: 15px;
+        height: auto;
   }
 
   .range {
@@ -1763,7 +1856,9 @@ a {
   .line_a {
     font-size: 33px;
   }
-
+.portfolio {
+      height: auto;
+    }
 }
   
 
@@ -1772,13 +1867,16 @@ a {
 /* Mobile (شاشات صغيرة أقل من 520px) */
 @media (max-width: 320px) {
     #about_page {
-      
+      height: auto;
         padding: 0px;
         margin: 0px;
     .h2-menna{
             font-size: 30px;
         }
         .cv{margin-left: 20%;}
+    }
+    .portfolio {
+      height: auto;
     }
 }
 
@@ -1837,3 +1935,7 @@ a {
     color: rgb(164, 163, 163);
   }
 }
+
+
+
+

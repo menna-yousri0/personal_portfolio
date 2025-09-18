@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Typing Effect
-const words = ["Menna Yousri.", "a Freelancer.", "a Programmer.", "a Web Developer."];
+const words = [  "a Software Engineer.", "a Web Developer."];
 let wordIndex = 0;
 let charIndex = 0;
 let currentWord = "";
